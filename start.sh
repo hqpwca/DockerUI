@@ -2,10 +2,10 @@
 
 cd /home/node/WebInterface
 #start backend
-node index.mjs > backend.log 2>&1 &
+nohup node index.mjs &
 #start frontend
 cd ui
-npm run serve > frontend.log 2>&1 &
+nohup npm run serve &
 
 # keep running
 while [[ true ]]; do
